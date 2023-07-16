@@ -11,78 +11,103 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
+
 [TestFixture]
 public class LivejoeldonatewithaccTest {
   private IWebDriver driver;
   public IDictionary<string, object> vars {get; private set;}
   private IJavaScriptExecutor js;
+
   [SetUp]
   public void SetUp() {
     driver = new ChromeDriver();
     js = (IJavaScriptExecutor)driver;
     vars = new Dictionary<string, object>();
   }
+
   [TearDown]
   protected void TearDown() {
     driver.Quit();
   }
+
   [Test]
   public void livejoeldonatewithacc() {
     driver.Navigate().GoToUrl("https://live.joelosteen.com/");
     driver.Manage().Window.Size = new System.Drawing.Size(945, 1020);
+    Thread.Sleep(8000); // Delay for 8 seconds
+
     driver.FindElement(By.Id("popup-signin-signin")).Click();
+    Thread.Sleep(2000); // Delay for 2 seconds
+
     driver.FindElement(By.Id("popup-signin-email-1")).Click();
     driver.FindElement(By.Id("popup-signin-email-1")).SendKeys("jeremyjr+tester@lakey.net");
+    Thread.Sleep(2000); // Delay for 2 seconds
+
     driver.FindElement(By.Id("popup-signin-password")).Click();
     driver.FindElement(By.Id("popup-signin-password")).SendKeys("TryThis#1");
+    Thread.Sleep(2000); // Delay for 2 seconds
+
     driver.FindElement(By.Id("popup-signin-submit-signin-form")).Click();
-    {
-      var element = driver.FindElement(By.Id("give-button"));
-      Actions builder = new Actions(driver);
-      builder.MoveToElement(element).Perform();
-    }
+    Thread.Sleep(5000); // Delay for 5 seconds
+
+    var element = driver.FindElement(By.Id("give-button"));
+    Actions builder = new Actions(driver);
+    builder.MoveToElement(element).Perform();
+    Thread.Sleep(2000); // Delay for 2 seconds
+
     driver.FindElement(By.Id("give-button")).Click();
-    {
-      var element = driver.FindElement(By.tagName("body"));
-      Actions builder = new Actions(driver);
-      builder.MoveToElement(element, 0, 0).Perform();
-    }
+    Thread.Sleep(2000); // Delay for 2 seconds
+
+    var bodyElement = driver.FindElement(By.TagName("body"));
+    Actions bodyBuilder = new Actions(driver);
+    bodyBuilder.MoveToElement(bodyElement, 0, 0).Perform();
+    Thread.Sleep(2000); // Delay for 2 seconds
+
     driver.FindElement(By.Id("popupgive-donationamount")).Click();
-    {
-      var element = driver.FindElement(By.CssSelector("#popupgive-donation-form .col-md-4:nth-child(2)"));
-      Actions builder = new Actions(driver);
-      builder.MoveToElement(element).ClickAndHold().Perform();
-    }
-    {
-      var element = driver.FindElement(By.CssSelector("#popupgive-donation-form .col-md-4:nth-child(2)"));
-      Actions builder = new Actions(driver);
-      builder.MoveToElement(element).Perform();
-    }
-    {
-      var element = driver.FindElement(By.CssSelector("#popupgive-donation-form .col-md-4:nth-child(2)"));
-      Actions builder = new Actions(driver);
-      builder.MoveToElement(element).Release().Perform();
-    }
+    Thread.Sleep(2000); // Delay for 2 seconds
+
+    var amountElement = driver.FindElement(By.CssSelector("#popupgive-donation-form .col-md-4:nth-child(2)"));
+    Actions amountBuilder = new Actions(driver);
+    amountBuilder.MoveToElement(amountElement).ClickAndHold().Perform();
+    Thread.Sleep(2000); // Delay for 2 seconds
+
+    amountBuilder.MoveToElement(amountElement).Perform();
+    Thread.Sleep(2000); // Delay for 2 seconds
+
+    amountBuilder.MoveToElement(amountElement).Release().Perform();
+    Thread.Sleep(2000); // Delay for 2 seconds
+
     driver.FindElement(By.CssSelector("#popupgive-donation-form .col-md-4:nth-child(2)")).Click();
-    {
-      var element = driver.FindElement(By.CssSelector("#popupgive-donation-form .col-md-4:nth-child(2)"));
-      Actions builder = new Actions(driver);
-      builder.DoubleClick(element).Perform();
-    }
+    Thread.Sleep(2000); // Delay for 2 seconds
+
+    amountBuilder.DoubleClick(amountElement).Perform();
+    Thread.Sleep(2000); // Delay for 2 seconds
+
     driver.FindElement(By.Id("popupgive-donationamount")).SendKeys("50");
+    Thread.Sleep(2000); // Delay for 2 seconds
+
     driver.FindElement(By.Id("popupgive-submit-donation-form")).Click();
-    driver.FindElement(By.Id("popupgive-paymentmethod")).Click();
-    {
-      var dropdown = driver.FindElement(By.Id("popupgive-paymentmethod"));
-      dropdown.FindElement(By.XPath("//option[. = 'New Payment Method']")).Click();
-    }
-    driver.FindElement(By.Id("popupgive-address1")).Click();
-    driver.FindElement(By.Id("popupgive-accountname")).Click();
+    Thread.Sleep(8000); // Delay for 8 seconds
+
     driver.FindElement(By.Id("popupgive-submit-payment-form")).Click();
+    Thread.Sleep(5000); // delay for 5 seconds
+
+    driver.FindElement(By.Id("popupgive-cardnumber")).Click();
+    Thread.Sleep(2000); // Delay for 2 seconds
+
     driver.FindElement(By.Id("popupgive-cardnumber")).SendKeys("5454545454545454");
+    Thread.Sleep(2000); // Delay for 2 seconds
+
     driver.FindElement(By.Id("popupgive-cardexp")).SendKeys("1234");
+    Thread.Sleep(2000); // Delay for 2 seconds
+
     driver.FindElement(By.Id("popupgive-cardcvv")).SendKeys("123");
+    Thread.Sleep(2000); // Delay for 2 seconds
+
     driver.FindElement(By.Id("popupgive-submit-payment-detail-form")).Click();
+    Thread.Sleep(6000); // Delay for 6 seconds
+
     driver.FindElement(By.Id("popupgive-submit-review-form")).Click();
+    Thread.Sleep(5000); // 5 second delay
   }
 }

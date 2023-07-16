@@ -11,55 +11,78 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Interactions;
 using NUnit.Framework;
+
 [TestFixture]
-public class LivelakewooddonatewithaccTest {
-  private IWebDriver driver;
-  public IDictionary<string, object> vars {get; private set;}
-  private IJavaScriptExecutor js;
-  [SetUp]
-  public void SetUp() {
-    driver = new ChromeDriver();
-    js = (IJavaScriptExecutor)driver;
-    vars = new Dictionary<string, object>();
-  }
-  [TearDown]
-  protected void TearDown() {
-    driver.Quit();
-  }
-  [Test]
-  public void livelakewooddonatewithacc() {
-    driver.Navigate().GoToUrl("https://live.lakewoodchurch.com/");
-    driver.Manage().Window.Size = new System.Drawing.Size(945, 1020);
-    driver.FindElement(By.CssSelector(".navbar-toggler-icon")).Click();
-    driver.FindElement(By.CssSelector(".nav-link:nth-child(10)")).Click();
-    driver.FindElement(By.Id("giveform-donationamount")).Click();
-    driver.FindElement(By.Id("giveform-donationamount")).SendKeys("50");
-    driver.FindElement(By.Id("giveform-submit-donation-form")).Click();
-    driver.FindElement(By.Id("giveform-username")).Click();
-    driver.FindElement(By.Id("giveform-username")).SendKeys("jeremyjr+tester@lakey.net");
-    driver.FindElement(By.Id("giveform-username")).SendKeys(Keys.Enter);
-    driver.FindElement(By.Id("giveform-password")).SendKeys("TryThis#1");
-    driver.FindElement(By.Id("giveform-submit-signin-form")).Click();
-    driver.FindElement(By.CssSelector("#giveform-review-form #giveform-paymentmethod")).Click();
+public class LivelakewooddonatewithaccTest
+{
+    private IWebDriver driver;
+    public IDictionary<string, object> vars { get; private set; }
+    private IJavaScriptExecutor js;
+
+    [SetUp]
+    public void SetUp()
     {
-      var dropdown = driver.FindElement(By.CssSelector("#giveform-review-form #giveform-paymentmethod"));
-      dropdown.FindElement(By.XPath("//option[. = 'New Payment Method']")).Click();
+        driver = new ChromeDriver();
+        js = (IJavaScriptExecutor)driver;
+        vars = new Dictionary<string, object>();
     }
-    driver.FindElement(By.Id("giveform-submit-review-form")).Click();
-    driver.FindElement(By.CssSelector("#giveform-review-form .mt-3")).Click();
-    driver.FindElement(By.Id("giveform-submit-donation-form")).Click();
-    js.ExecuteScript("window.scrollTo(0,976)");
-    driver.FindElement(By.Id("giveform-submit-payment-form")).Click();
-    driver.FindElement(By.Id("giveform-cardnumber")).SendKeys("5454545454545454");
-    driver.FindElement(By.CssSelector("#giveform-payment-detail-form .col-md-9")).Click();
-    driver.FindElement(By.Id("giveform-cardexp")).Click();
-    driver.FindElement(By.Id("giveform-cardexp")).SendKeys("1234");
-    driver.FindElement(By.CssSelector("#giveform-payment-detail-form .col-md-9")).Click();
-    driver.FindElement(By.Id("giveform-cardcvv")).Click();
-    driver.FindElement(By.Id("giveform-cardcvv")).SendKeys("123");
-    driver.FindElement(By.CssSelector(".p-3:nth-child(2)")).Click();
-    driver.FindElement(By.Id("giveform-submit-payment-detail-form")).Click();
-    driver.FindElement(By.Id("giveform-submit-review-form")).Click();
-    driver.FindElement(By.CssSelector("#giveform #giveform-logout-button")).Click();
-  }
+
+    [TearDown]
+    protected void TearDown()
+    {
+        driver.Quit();
+    }
+
+    [Test]
+    public void livelakewooddonatewithacc()
+    {
+        driver.Navigate().GoToUrl("https://live.lakewoodchurch.com/");
+        driver.Manage().Window.Size = new System.Drawing.Size(945, 1020);
+        Thread.Sleep(5000); // Delay for 5 seconds
+        driver.FindElement(By.CssSelector(".navbar-toggler-icon")).Click();
+        Thread.Sleep(3000); // Delay for 3 seconds
+        driver.FindElement(By.CssSelector(".nav-link:nth-child(10)")).Click();
+        Thread.Sleep(2000); // Delay for 2 seconds        
+        js.ExecuteScript("window.scrollTo(0,976)"); // Scroll down
+        Thread.Sleep(1000); // 1 second delay
+        driver.FindElement(By.Id("giveform-donationamount")).Click();
+        driver.FindElement(By.Id("giveform-donationamount")).SendKeys("50");
+        Thread.Sleep(1000); // Delay for 1 second
+        driver.FindElement(By.Id("giveform-submit-donation-form")).Click();
+        Thread.Sleep(2000); // Delay for 2 second
+        driver.FindElement(By.Id("giveform-username")).Click();
+        driver.FindElement(By.Id("giveform-username")).SendKeys("jeremyjr+tester@lakey.net");
+        driver.FindElement(By.Id("giveform-username")).SendKeys(Keys.Enter);
+        Thread.Sleep(1000); // Delay for 1 second
+        driver.FindElement(By.Id("giveform-password")).SendKeys("TryThis#1");
+        Thread.Sleep(1000); // Delay for 1 second
+        driver.FindElement(By.Id("giveform-submit-signin-form")).Click();
+        Thread.Sleep(7000); // Delay for 7 seconds
+        driver.FindElement(By.CssSelector("#giveform-review-form #giveform-paymentmethod")).Click();
+        Thread.Sleep(5000); // Delay for 5 second
+        {
+            var dropdown = driver.FindElement(By.CssSelector("#giveform-review-form #giveform-paymentmethod"));
+            Thread.Sleep(1000); // Delay for 1 second
+            dropdown.FindElement(By.XPath("option[. = 'New Payment Method']")).Click();
+        }
+        driver.FindElement(By.Id("giveform-submit-review-form")).Click();
+        driver.FindElement(By.CssSelector("#giveform-review-form .mt-3")).Click();
+        Thread.Sleep(8000); // 8 second delay
+        driver.FindElement(By.Id("giveform-submit-donation-form")).Click();
+        Thread.Sleep(4000); // 4 second delay
+        js.ExecuteScript("window.scrollTo(0,976)");
+        driver.FindElement(By.Id("giveform-submit-payment-form")).Click();
+        Thread.Sleep(5000); //5 second delay
+        driver.FindElement(By.Id("giveform-cardnumber")).SendKeys("5454545454545454");
+        Thread.Sleep(2000); // Delay for 2 second
+        driver.FindElement(By.Id("giveform-cardexp")).SendKeys("1234");
+        Thread.Sleep(2000); // Delay for 2 second
+        Thread.Sleep(3000);
+        driver.FindElement(By.Id("giveform-cardcvv")).SendKeys("123");
+        Thread.Sleep(1000); // Delay for 1 second
+        driver.FindElement(By.Id("giveform-submit-payment-detail-form")).Click();
+        Thread.Sleep(8000); // Delay for 8 seconds
+        driver.FindElement(By.Id("giveform-submit-review-form")).Click();
+        Thread.Sleep(5000);
+    }
 }
