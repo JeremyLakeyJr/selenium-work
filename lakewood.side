@@ -1,0 +1,1360 @@
+{
+  "id": "be78a27d-663d-46f8-9de5-00e002b82e59",
+  "version": "2.0",
+  "name": "lakewood",
+  "url": "https://live.joelosteen.com/offer",
+  "tests": [{
+    "id": "ed0cf0e3-ba65-4b20-93e3-3c82a70476fe",
+    "name": "live,lakewood donate with acc",
+    "commands": [{
+      "id": "9e225e7b-4a00-4ab4-a23a-c4f94cc6b9f3",
+      "comment": "",
+      "command": "open",
+      "target": "https://live.lakewoodchurch.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "435de263-4779-48dc-92c5-0c771e6d87e1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "742c6854-32b0-4f67-809f-155b6c832bd0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggler-icon",
+      "targets": [
+        ["css=.navbar-toggler-icon", "css:finder"],
+        ["xpath=//nav[@id='mainNavBar']/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a382cf6-fb27-46cb-8cac-2bbb3c55d730",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-link:nth-child(10)",
+      "targets": [
+        ["css=.nav-link:nth-child(10)", "css:finder"],
+        ["xpath=//a[contains(text(),'Give')]", "xpath:link"],
+        ["xpath=//div[@id='MainMenuNav']/div/a[9]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './give')]", "xpath:href"],
+        ["xpath=//a[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "615b8f68-2266-4ff1-a66e-7023b29352fb",
+      "comment": "",
+      "command": "click",
+      "target": "id=giveform-donationamount",
+      "targets": [
+        ["id=giveform-donationamount", "id"],
+        ["css=#giveform-donationamount", "css:finder"],
+        ["xpath=//input[@id='giveform-donationamount']", "xpath:attributes"],
+        ["xpath=//form[@id='giveform-donation-form']/div/div[2]/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[2]/div/div[2]/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa9aa942-6c8b-49c6-a930-7ff7313d3de9",
+      "comment": "",
+      "command": "type",
+      "target": "id=giveform-donationamount",
+      "targets": [
+        ["id=giveform-donationamount", "id"],
+        ["css=#giveform-donationamount", "css:finder"],
+        ["xpath=//input[@id='giveform-donationamount']", "xpath:attributes"],
+        ["xpath=//form[@id='giveform-donation-form']/div/div[2]/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[2]/div/div[2]/div/span/input", "xpath:position"]
+      ],
+      "value": "50"
+    }, {
+      "id": "d2d9c4d7-4bec-4183-b168-37e7673dd584",
+      "comment": "",
+      "command": "click",
+      "target": "id=giveform-submit-donation-form",
+      "targets": [
+        ["id=giveform-submit-donation-form", "id"],
+        ["css=#giveform-submit-donation-form", "css:finder"],
+        ["xpath=//button[@id='giveform-submit-donation-form']", "xpath:attributes"],
+        ["xpath=//form[@id='giveform-donation-form']/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[2]/div[2]/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59266df3-eaed-4e85-9435-1a0b38ffe54d",
+      "comment": "",
+      "command": "click",
+      "target": "id=giveform-username",
+      "targets": [
+        ["id=giveform-username", "id"],
+        ["css=#giveform-username", "css:finder"],
+        ["xpath=//input[@id='giveform-username']", "xpath:attributes"],
+        ["xpath=//form[@id='giveform-username-form']/div/div[2]/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[3]/div/div[2]/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d6f23ab-b163-4690-8ced-197732c754cb",
+      "comment": "",
+      "command": "type",
+      "target": "id=giveform-username",
+      "targets": [
+        ["id=giveform-username", "id"],
+        ["css=#giveform-username", "css:finder"],
+        ["xpath=//input[@id='giveform-username']", "xpath:attributes"],
+        ["xpath=//form[@id='giveform-username-form']/div/div[2]/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[3]/div/div[2]/div/span/input", "xpath:position"]
+      ],
+      "value": "jeremyjr+tester@lakey.net"
+    }, {
+      "id": "5db3cdc9-2e2d-40b7-a77e-43c58a154aec",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=giveform-username",
+      "targets": [
+        ["id=giveform-username", "id"],
+        ["css=#giveform-username", "css:finder"],
+        ["xpath=//input[@id='giveform-username']", "xpath:attributes"],
+        ["xpath=//form[@id='giveform-username-form']/div/div[2]/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[3]/div/div[2]/div/span/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "262c2d7e-59bf-4d01-9183-e7dd30267521",
+      "comment": "",
+      "command": "type",
+      "target": "id=giveform-password",
+      "targets": [
+        ["id=giveform-password", "id"],
+        ["css=#giveform-password", "css:finder"],
+        ["xpath=//input[@id='giveform-password']", "xpath:attributes"],
+        ["xpath=//form[@id='giveform-signin-form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[4]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "TryThis#1"
+    }, {
+      "id": "b7fdc79b-3d54-440f-9e7e-09f4d9778632",
+      "comment": "",
+      "command": "click",
+      "target": "id=giveform-submit-signin-form",
+      "targets": [
+        ["id=giveform-submit-signin-form", "id"],
+        ["css=#giveform-submit-signin-form", "css:finder"],
+        ["xpath=//button[@id='giveform-submit-signin-form']", "xpath:attributes"],
+        ["xpath=//form[@id='giveform-signin-form']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[4]/div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0beca32e-9460-4640-bff5-aa673e19c450",
+      "comment": "",
+      "command": "click",
+      "target": "css=#giveform-review-form #giveform-paymentmethod",
+      "targets": [
+        ["css=#giveform-review-form #giveform-paymentmethod", "css:finder"],
+        ["xpath=(//select[@id='giveform-paymentmethod'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='giveform-review-form']/div/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[7]/div/div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f0ae8028-3118-4d51-9f17-40c82865c597",
+      "comment": "",
+      "command": "select",
+      "target": "css=#giveform-review-form #giveform-paymentmethod",
+      "targets": [],
+      "value": "label=New Payment Method"
+    }, {
+      "id": "3cb3763a-9d95-4ceb-9caf-6a86c37b759b",
+      "comment": "",
+      "command": "click",
+      "target": "id=giveform-submit-review-form",
+      "targets": [
+        ["id=giveform-submit-review-form", "id"],
+        ["css=#giveform-submit-review-form", "css:finder"],
+        ["xpath=//button[@id='giveform-submit-review-form']", "xpath:attributes"],
+        ["xpath=//form[@id='giveform-review-form']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[7]/div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bab3d8e6-0d8a-4f3f-abc0-98050c3e4d7b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#giveform-review-form .mt-3",
+      "targets": [
+        ["css=#giveform-review-form .mt-3", "css:finder"],
+        ["xpath=//form[@id='giveform-review-form']/div/div/button/i", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[7]/div/div/button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "40987697-3f10-4478-9af4-052be3987bfb",
+      "comment": "",
+      "command": "click",
+      "target": "id=giveform-submit-donation-form",
+      "targets": [
+        ["id=giveform-submit-donation-form", "id"],
+        ["css=#giveform-submit-donation-form", "css:finder"],
+        ["xpath=//button[@id='giveform-submit-donation-form']", "xpath:attributes"],
+        ["xpath=//form[@id='giveform-donation-form']/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[2]/div[2]/div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd6f6ce8-0425-4c0f-85cc-520b077ca8c1",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,976)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7edeef05-7177-4f7c-8b32-a5711d503710",
+      "comment": "",
+      "command": "click",
+      "target": "id=giveform-submit-payment-form",
+      "targets": [
+        ["id=giveform-submit-payment-form", "id"],
+        ["css=#giveform-submit-payment-form", "css:finder"],
+        ["xpath=//button[@id='giveform-submit-payment-form']", "xpath:attributes"],
+        ["xpath=//form[@id='giveform-payment-form']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[9]/div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e28987d-27c8-4afc-a6d9-385f978ef39a",
+      "comment": "",
+      "command": "type",
+      "target": "id=giveform-cardnumber",
+      "targets": [
+        ["id=giveform-cardnumber", "id"],
+        ["css=#giveform-cardnumber", "css:finder"],
+        ["xpath=//input[@id='giveform-cardnumber']", "xpath:attributes"],
+        ["xpath=//div[@id='giveform-credit-card-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[10]/div/div[3]/div/input", "xpath:position"]
+      ],
+      "value": "5454545454545454"
+    }, {
+      "id": "66ebb737-535d-4f78-94b5-f070efffff78",
+      "comment": "",
+      "command": "click",
+      "target": "css=#giveform-payment-detail-form .col-md-9",
+      "targets": [
+        ["css=#giveform-payment-detail-form .col-md-9", "css:finder"],
+        ["xpath=//form[@id='giveform-payment-detail-form']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[10]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03da4c7c-fb53-4bc8-a90b-58685f02d380",
+      "comment": "",
+      "command": "click",
+      "target": "id=giveform-cardexp",
+      "targets": [
+        ["id=giveform-cardexp", "id"],
+        ["css=#giveform-cardexp", "css:finder"],
+        ["xpath=//input[@id='giveform-cardexp']", "xpath:attributes"],
+        ["xpath=//div[@id='giveform-credit-card-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[10]/div/div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcf4b291-6386-4b1a-8d4f-efec04dc0ffa",
+      "comment": "",
+      "command": "type",
+      "target": "id=giveform-cardexp",
+      "targets": [
+        ["id=giveform-cardexp", "id"],
+        ["css=#giveform-cardexp", "css:finder"],
+        ["xpath=//input[@id='giveform-cardexp']", "xpath:attributes"],
+        ["xpath=//div[@id='giveform-credit-card-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[10]/div/div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "2536807f-4302-4060-b443-cbfcad1bccce",
+      "comment": "",
+      "command": "click",
+      "target": "css=#giveform-payment-detail-form .col-md-9",
+      "targets": [
+        ["css=#giveform-payment-detail-form .col-md-9", "css:finder"],
+        ["xpath=//form[@id='giveform-payment-detail-form']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[10]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b01502c-7fc3-4153-b593-bc5e3cc094b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=giveform-cardcvv",
+      "targets": [
+        ["id=giveform-cardcvv", "id"],
+        ["css=#giveform-cardcvv", "css:finder"],
+        ["xpath=//input[@id='giveform-cardcvv']", "xpath:attributes"],
+        ["xpath=//div[@id='giveform-credit-card-form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[10]/div/div[3]/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3c5babc-f5ef-4d43-8972-0b025d7e88c7",
+      "comment": "",
+      "command": "type",
+      "target": "id=giveform-cardcvv",
+      "targets": [
+        ["id=giveform-cardcvv", "id"],
+        ["css=#giveform-cardcvv", "css:finder"],
+        ["xpath=//input[@id='giveform-cardcvv']", "xpath:attributes"],
+        ["xpath=//div[@id='giveform-credit-card-form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[10]/div/div[3]/div[3]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "0e93210b-af8c-48b4-8907-a7edfdce96c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.p-3:nth-child(2)",
+      "targets": [
+        ["css=.p-3:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='main-content-area']/div[2]/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd4e8c5d-1dd4-4439-94ef-cc0595f1dbdd",
+      "comment": "",
+      "command": "click",
+      "target": "id=giveform-submit-payment-detail-form",
+      "targets": [
+        ["id=giveform-submit-payment-detail-form", "id"],
+        ["css=#giveform-submit-payment-detail-form", "css:finder"],
+        ["xpath=//button[@id='giveform-submit-payment-detail-form']", "xpath:attributes"],
+        ["xpath=//form[@id='giveform-payment-detail-form']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[10]/div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28ff45e5-20ea-47be-94e0-bfadf10c3910",
+      "comment": "",
+      "command": "click",
+      "target": "id=giveform-submit-review-form",
+      "targets": [
+        ["id=giveform-submit-review-form", "id"],
+        ["css=#giveform-submit-review-form", "css:finder"],
+        ["xpath=//button[@id='giveform-submit-review-form']", "xpath:attributes"],
+        ["xpath=//form[@id='giveform-review-form']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/form[7]/div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "489560f9-65f3-4b64-a234-dc5ce6ca91b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#giveform #giveform-logout-button",
+      "targets": [
+        ["css=#giveform #giveform-logout-button", "css:finder"],
+        ["xpath=(//button[@id='giveform-logout-button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='giveform']/div[2]/div/div/small/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div/div/small/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "719e1e20-a557-4711-b25c-2a37a64d7509",
+    "name": "live joel donate with acc",
+    "commands": [{
+      "id": "b4116e01-b0c2-44df-befe-4d1e2f9ecd4b",
+      "comment": "",
+      "command": "open",
+      "target": "https://live.joelosteen.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d247dfe-0f26-4381-828e-f1f3573eca5c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3004d7f7-7056-4c0b-9f6e-5dabfa26ed46",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup-signin-signin",
+      "targets": [
+        ["id=popup-signin-signin", "id"],
+        ["css=#popup-signin-signin", "css:finder"],
+        ["xpath=//span[@id='popup-signin-signin']", "xpath:attributes"],
+        ["xpath=//div[@id='popup-signin']/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff7997b6-63ed-42fc-b5b7-3d6066c21483",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup-signin-email-1",
+      "targets": [
+        ["id=popup-signin-email-1", "id"],
+        ["name=email", "name"],
+        ["css=#popup-signin-email-1", "css:finder"],
+        ["xpath=//input[@id='popup-signin-email-1']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-signin-form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d77c0ade-8cf9-4759-a463-b59f47b62fbb",
+      "comment": "",
+      "command": "type",
+      "target": "id=popup-signin-email-1",
+      "targets": [
+        ["id=popup-signin-email-1", "id"],
+        ["name=email", "name"],
+        ["css=#popup-signin-email-1", "css:finder"],
+        ["xpath=//input[@id='popup-signin-email-1']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-signin-form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "jeremyjr+tester@lakey.net"
+    }, {
+      "id": "b2135742-a204-4be7-b87c-8113f6ca9d55",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup-signin-password",
+      "targets": [
+        ["id=popup-signin-password", "id"],
+        ["name=password", "name"],
+        ["css=#popup-signin-password", "css:finder"],
+        ["xpath=//input[@id='popup-signin-password']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-signin-form']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51447bde-d928-4ff2-a751-e7f3f188e67c",
+      "comment": "",
+      "command": "type",
+      "target": "id=popup-signin-password",
+      "targets": [
+        ["id=popup-signin-password", "id"],
+        ["name=password", "name"],
+        ["css=#popup-signin-password", "css:finder"],
+        ["xpath=//input[@id='popup-signin-password']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-signin-form']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "TryThis#1"
+    }, {
+      "id": "6781be0b-f487-4fc6-8ca1-cb13757df238",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup-signin-submit-signin-form",
+      "targets": [
+        ["id=popup-signin-submit-signin-form", "id"],
+        ["css=#popup-signin-submit-signin-form", "css:finder"],
+        ["xpath=//button[@id='popup-signin-submit-signin-form']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-signin-form']/div[3]/div/div/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9276ff8a-68b3-4d95-a511-e0e32c3013b1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=give-button",
+      "targets": [
+        ["id=give-button", "id"],
+        ["css=#give-button", "css:finder"],
+        ["xpath=//button[@id='give-button']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-subrow']/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Give')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d09d2ee7-8996-4f20-a4df-ae8991df21ab",
+      "comment": "",
+      "command": "click",
+      "target": "id=give-button",
+      "targets": [
+        ["id=give-button", "id"],
+        ["css=#give-button", "css:finder"],
+        ["xpath=//button[@id='give-button']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-subrow']/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Give')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccdb4207-b321-481f-a451-3f054e25fe75",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=give-button",
+      "targets": [
+        ["id=give-button", "id"],
+        ["css=#give-button", "css:finder"],
+        ["xpath=//button[@id='give-button']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-subrow']/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Give')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85230bc2-eb42-46f6-a7b3-743647b7226e",
+      "comment": "",
+      "command": "click",
+      "target": "id=popupgive-donationamount",
+      "targets": [
+        ["id=popupgive-donationamount", "id"],
+        ["name=donationamount", "name"],
+        ["css=#popupgive-donationamount", "css:finder"],
+        ["xpath=//input[@id='popupgive-donationamount']", "xpath:attributes"],
+        ["xpath=//form[@id='popupgive-donation-form']/div/div[2]/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e9fcfa3-38f6-4170-9109-122f79e1e160",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=#popupgive-donation-form .col-md-4:nth-child(2)",
+      "targets": [
+        ["css=#popupgive-donation-form .col-md-4:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='popupgive-donation-form']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//form[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": "1.515625,42.0625"
+    }, {
+      "id": "0c5e94ec-3f2f-4360-8571-ca3147808ebc",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=#popupgive-donation-form .col-md-4:nth-child(2)",
+      "targets": [
+        ["css=#popupgive-donation-form .col-md-4:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='popupgive-donation-form']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//form[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": "1.515625,42.0625"
+    }, {
+      "id": "5018e168-bd4f-4e28-ac90-cad37bde341e",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=#popupgive-donation-form .col-md-4:nth-child(2)",
+      "targets": [
+        ["css=#popupgive-donation-form .col-md-4:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='popupgive-donation-form']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//form[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": "1.515625,42.0625"
+    }, {
+      "id": "2326bb5b-baef-4811-bcdf-c27361710f0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#popupgive-donation-form .col-md-4:nth-child(2)",
+      "targets": [
+        ["css=#popupgive-donation-form .col-md-4:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='popupgive-donation-form']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//form[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5391ac9c-c3a1-404f-80b2-9fdba130a46b",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=#popupgive-donation-form .col-md-4:nth-child(2)",
+      "targets": [
+        ["css=#popupgive-donation-form .col-md-4:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='popupgive-donation-form']/div/div[2]", "xpath:idRelative"],
+        ["xpath=//form[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d275d697-5f62-40a7-b4e4-f624b3dafefb",
+      "comment": "",
+      "command": "type",
+      "target": "id=popupgive-donationamount",
+      "targets": [
+        ["id=popupgive-donationamount", "id"],
+        ["name=donationamount", "name"],
+        ["css=#popupgive-donationamount", "css:finder"],
+        ["xpath=//input[@id='popupgive-donationamount']", "xpath:attributes"],
+        ["xpath=//form[@id='popupgive-donation-form']/div/div[2]/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span/input", "xpath:position"]
+      ],
+      "value": "50"
+    }, {
+      "id": "1d5c4153-93d2-4347-88fb-e2dc690d5ca9",
+      "comment": "",
+      "command": "click",
+      "target": "id=popupgive-submit-donation-form",
+      "targets": [
+        ["id=popupgive-submit-donation-form", "id"],
+        ["css=#popupgive-submit-donation-form", "css:finder"],
+        ["xpath=//button[@id='popupgive-submit-donation-form']", "xpath:attributes"],
+        ["xpath=//form[@id='popupgive-donation-form']/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be4781b6-a4ab-4488-943d-dc16af744bda",
+      "comment": "",
+      "command": "click",
+      "target": "id=popupgive-paymentmethod",
+      "targets": [
+        ["id=popupgive-paymentmethod", "id"],
+        ["name=paymentmethod", "name"],
+        ["css=#popupgive-paymentmethod", "css:finder"],
+        ["xpath=//select[@id='popupgive-paymentmethod']", "xpath:attributes"],
+        ["xpath=//form[@id='popupgive-review-form']/div/div[2]/div/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff681e11-ac81-4756-906d-b8a13648c94f",
+      "comment": "",
+      "command": "select",
+      "target": "id=popupgive-paymentmethod",
+      "targets": [],
+      "value": "label=New Payment Method"
+    }, {
+      "id": "8b06d3eb-ceb2-432b-af48-4a3e1b4da738",
+      "comment": "",
+      "command": "click",
+      "target": "id=popupgive-address1",
+      "targets": [
+        ["id=popupgive-address1", "id"],
+        ["name=address1", "name"],
+        ["css=#popupgive-address1", "css:finder"],
+        ["xpath=//input[@id='popupgive-address1']", "xpath:attributes"],
+        ["xpath=//form[@id='popupgive-payment-form']/div/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//form[9]/div/div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a95d06f3-60ed-411a-9c60-0fea6b471744",
+      "comment": "",
+      "command": "click",
+      "target": "id=popupgive-accountname",
+      "targets": [
+        ["id=popupgive-accountname", "id"],
+        ["name=accountname", "name"],
+        ["css=#popupgive-accountname", "css:finder"],
+        ["xpath=//input[@id='popupgive-accountname']", "xpath:attributes"],
+        ["xpath=//form[@id='popupgive-payment-form']/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form[9]/div/div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c5224fc-ea07-416c-be37-2864822cc2ee",
+      "comment": "",
+      "command": "click",
+      "target": "id=popupgive-submit-payment-form",
+      "targets": [
+        ["id=popupgive-submit-payment-form", "id"],
+        ["css=#popupgive-submit-payment-form", "css:finder"],
+        ["xpath=//button[@id='popupgive-submit-payment-form']", "xpath:attributes"],
+        ["xpath=//form[@id='popupgive-payment-form']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form[9]/div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "552f4a83-0e79-4b91-830b-4bae279c6ddf",
+      "comment": "",
+      "command": "type",
+      "target": "id=popupgive-cardnumber",
+      "targets": [
+        ["id=popupgive-cardnumber", "id"],
+        ["name=cardnumber", "name"],
+        ["css=#popupgive-cardnumber", "css:finder"],
+        ["xpath=//input[@id='popupgive-cardnumber']", "xpath:attributes"],
+        ["xpath=//div[@id='popupgive-credit-card-form']/div/input", "xpath:idRelative"],
+        ["xpath=//form[10]/div/div[3]/div/input", "xpath:position"]
+      ],
+      "value": "5454545454545454"
+    }, {
+      "id": "74c3ae62-a6ef-4df8-9381-b97ed94663be",
+      "comment": "",
+      "command": "type",
+      "target": "id=popupgive-cardexp",
+      "targets": [
+        ["id=popupgive-cardexp", "id"],
+        ["name=cardexp", "name"],
+        ["css=#popupgive-cardexp", "css:finder"],
+        ["xpath=//input[@id='popupgive-cardexp']", "xpath:attributes"],
+        ["xpath=//div[@id='popupgive-credit-card-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "81f2c74c-16b3-41e1-9564-7fe9040b8f90",
+      "comment": "",
+      "command": "type",
+      "target": "id=popupgive-cardcvv",
+      "targets": [
+        ["id=popupgive-cardcvv", "id"],
+        ["name=cardcvv", "name"],
+        ["css=#popupgive-cardcvv", "css:finder"],
+        ["xpath=//input[@id='popupgive-cardcvv']", "xpath:attributes"],
+        ["xpath=//div[@id='popupgive-credit-card-form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "4603dec9-a2b8-45f5-b67d-78cee9d88bd3",
+      "comment": "",
+      "command": "click",
+      "target": "id=popupgive-submit-payment-detail-form",
+      "targets": [
+        ["id=popupgive-submit-payment-detail-form", "id"],
+        ["css=#popupgive-submit-payment-detail-form", "css:finder"],
+        ["xpath=//button[@id='popupgive-submit-payment-detail-form']", "xpath:attributes"],
+        ["xpath=//form[@id='popupgive-payment-detail-form']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form[10]/div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30c03fe3-34e9-4dee-8df0-2d1c52a9f011",
+      "comment": "",
+      "command": "click",
+      "target": "id=popupgive-submit-review-form",
+      "targets": [
+        ["id=popupgive-submit-review-form", "id"],
+        ["css=#popupgive-submit-review-form", "css:finder"],
+        ["xpath=//button[@id='popupgive-submit-review-form']", "xpath:attributes"],
+        ["xpath=//form[@id='popupgive-review-form']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form[7]/div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Complete Donation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b876e586-0480-4df2-bb80-dc6083663f8f",
+    "name": "live joel acc maker",
+    "commands": [{
+      "id": "361cc257-7fb3-4588-9cb6-009a5504e0db",
+      "comment": "",
+      "command": "open",
+      "target": "https://live.joelosteen.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51ccee0d-b3a9-4931-beaf-9290f21d1590",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "495378e3-a6f1-471d-90eb-c638e25f6e6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup-signin-signin",
+      "targets": [
+        ["id=popup-signin-signin", "id"],
+        ["css=#popup-signin-signin", "css:finder"],
+        ["xpath=//span[@id='popup-signin-signin']", "xpath:attributes"],
+        ["xpath=//div[@id='popup-signin']/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d03a4f2-fb9e-4401-b112-3c22ac1a2fa8",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup-signin-email-1",
+      "targets": [
+        ["id=popup-signin-email-1", "id"],
+        ["name=email", "name"],
+        ["css=#popup-signin-email-1", "css:finder"],
+        ["xpath=//input[@id='popup-signin-email-1']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-signin-form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af7cfdf9-6409-48f3-a44e-43ca56def7eb",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup-signin-show-create-account-form",
+      "targets": [
+        ["id=popup-signin-show-create-account-form", "id"],
+        ["css=#popup-signin-show-create-account-form", "css:finder"],
+        ["xpath=//span[@id='popup-signin-show-create-account-form']", "xpath:attributes"],
+        ["xpath=//div[@id='popup-signin-nav-tab']/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4f2bc4b-5417-4620-b18c-4992bde2b739",
+      "comment": "",
+      "command": "type",
+      "target": "id=popup-signin-firstname",
+      "targets": [
+        ["id=popup-signin-firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#popup-signin-firstname", "css:finder"],
+        ["xpath=//input[@id='popup-signin-firstname']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Jeremy"
+    }, {
+      "id": "eda1d5f9-2731-423f-9b3e-e8b454044bb8",
+      "comment": "",
+      "command": "type",
+      "target": "id=popup-signin-lastname",
+      "targets": [
+        ["id=popup-signin-lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#popup-signin-lastname", "css:finder"],
+        ["xpath=//input[@id='popup-signin-lastname']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//form[4]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Lakey"
+    }, {
+      "id": "f9790f5c-3bed-4239-890c-f40a0e2e8ff7",
+      "comment": "",
+      "command": "type",
+      "target": "id=popup-signin-email-3",
+      "targets": [
+        ["id=popup-signin-email-3", "id"],
+        ["css=#popup-signin-email-3", "css:finder"],
+        ["xpath=//input[@id='popup-signin-email-3']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//form[4]/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "jeremyjr+202307111517@lakey.net"
+    }, {
+      "id": "7a490f9b-57cc-403d-97e5-29bdb857ddcf",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup-signin-postalcode",
+      "targets": [
+        ["id=popup-signin-postalcode", "id"],
+        ["name=postalcode", "name"],
+        ["css=#popup-signin-postalcode", "css:finder"],
+        ["xpath=//input[@id='popup-signin-postalcode']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8406f49d-3b7b-4439-9351-b7a3c1910375",
+      "comment": "",
+      "command": "type",
+      "target": "id=popup-signin-postalcode",
+      "targets": [
+        ["id=popup-signin-postalcode", "id"],
+        ["name=postalcode", "name"],
+        ["css=#popup-signin-postalcode", "css:finder"],
+        ["xpath=//input[@id='popup-signin-postalcode']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "74055"
+    }, {
+      "id": "ae04f6ba-45b9-4dde-ba70-6d64e3881417",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-row:nth-child(8) .mr-5 span:nth-child(1)",
+      "targets": [
+        ["css=.form-row:nth-child(8) .mr-5 span:nth-child(1)", "css:finder"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div[6]/div/div/div/span/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45235c41-d3b0-4cf1-8bd8-ae991d5fdfb0",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup-signin-agreeterms-1",
+      "targets": [
+        ["id=popup-signin-agreeterms-1", "id"],
+        ["name=agreeterms", "name"],
+        ["css=#popup-signin-agreeterms-1", "css:finder"],
+        ["xpath=//input[@id='popup-signin-agreeterms-1']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div[6]/div/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "798c23c9-3fad-4d4d-8ebe-8a36e5f46dd2",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup-signin-submit-create-account-form",
+      "targets": [
+        ["id=popup-signin-submit-create-account-form", "id"],
+        ["css=#popup-signin-submit-create-account-form", "css:finder"],
+        ["xpath=//button[@id='popup-signin-submit-create-account-form']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div[7]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create My Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ffcbb805-e42a-4e71-8b7e-6c203029b5c1",
+    "name": "live lakewood acc maker",
+    "commands": [{
+      "id": "944fc2ec-5d73-4452-ad08-1b54bf3ad352",
+      "comment": "",
+      "command": "open",
+      "target": "https://live.lakewoodchurch.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e5b97c7-edc9-4486-8f56-a7c0cc1c7924",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1280",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88a34cb7-8a91-451d-b011-97ca3621b949",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup-signin-signin",
+      "targets": [
+        ["id=popup-signin-signin", "id"],
+        ["css=#popup-signin-signin", "css:finder"],
+        ["xpath=//span[@id='popup-signin-signin']", "xpath:attributes"],
+        ["xpath=//div[@id='popup-signin']/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1595f789-e8e5-451f-a02a-9ccc34d48ef7",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup-signin-show-create-account-form",
+      "targets": [
+        ["id=popup-signin-show-create-account-form", "id"],
+        ["css=#popup-signin-show-create-account-form", "css:finder"],
+        ["xpath=//span[@id='popup-signin-show-create-account-form']", "xpath:attributes"],
+        ["xpath=//div[@id='popup-signin-nav-tab']/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1b33eed-c1b9-4d4f-ab2f-0dfc98fd0a04",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup-signin-firstname",
+      "targets": [
+        ["id=popup-signin-firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#popup-signin-firstname", "css:finder"],
+        ["xpath=//input[@id='popup-signin-firstname']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b14e57b8-59e2-4779-bc1c-4c87bfe94034",
+      "comment": "",
+      "command": "type",
+      "target": "id=popup-signin-firstname",
+      "targets": [
+        ["id=popup-signin-firstname", "id"],
+        ["name=firstname", "name"],
+        ["css=#popup-signin-firstname", "css:finder"],
+        ["xpath=//input[@id='popup-signin-firstname']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//form[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "jeremy"
+    }, {
+      "id": "bf58783f-89e1-4ba6-824f-407b2038eb7c",
+      "comment": "",
+      "command": "type",
+      "target": "id=popup-signin-lastname",
+      "targets": [
+        ["id=popup-signin-lastname", "id"],
+        ["name=lastname", "name"],
+        ["css=#popup-signin-lastname", "css:finder"],
+        ["xpath=//input[@id='popup-signin-lastname']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//form[4]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "lakey"
+    }, {
+      "id": "ac7ea37c-95ff-422e-95a7-153bf52bf781",
+      "comment": "",
+      "command": "type",
+      "target": "id=popup-signin-email-3",
+      "targets": [
+        ["id=popup-signin-email-3", "id"],
+        ["css=#popup-signin-email-3", "css:finder"],
+        ["xpath=//input[@id='popup-signin-email-3']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//form[4]/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "jeremyjr+202307111519@lakey.net"
+    }, {
+      "id": "41c0f1e6-d16b-4470-89bd-f668e3cce9fb",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup-signin-postalcode",
+      "targets": [
+        ["id=popup-signin-postalcode", "id"],
+        ["name=postalcode", "name"],
+        ["css=#popup-signin-postalcode", "css:finder"],
+        ["xpath=//input[@id='popup-signin-postalcode']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "652b3d65-94e5-48c5-90c0-43215873ffec",
+      "comment": "",
+      "command": "type",
+      "target": "id=popup-signin-postalcode",
+      "targets": [
+        ["id=popup-signin-postalcode", "id"],
+        ["name=postalcode", "name"],
+        ["css=#popup-signin-postalcode", "css:finder"],
+        ["xpath=//input[@id='popup-signin-postalcode']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div[4]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/input", "xpath:position"]
+      ],
+      "value": "74055"
+    }, {
+      "id": "89295c6f-10dd-4176-8345-c1f8a322c362",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-row:nth-child(8) .mr-5 span:nth-child(1)",
+      "targets": [
+        ["css=.form-row:nth-child(8) .mr-5 span:nth-child(1)", "css:finder"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div[6]/div/div/div/span/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6295fee8-0675-4533-a9c3-c90eaed6ac23",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-row:nth-child(8) .mr-5 span:nth-child(1)",
+      "targets": [
+        ["css=.form-row:nth-child(8) .mr-5 span:nth-child(1)", "css:finder"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div[6]/div/div/div/span/label/span", "xpath:idRelative"],
+        ["xpath=//label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "352ec657-68a2-4805-94aa-ffe6a1be4d6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-row:nth-child(8) > .col-md-12",
+      "targets": [
+        ["css=.form-row:nth-child(8) > .col-md-12", "css:finder"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div[6]/div", "xpath:idRelative"],
+        ["xpath=//div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2619093f-e112-499f-af7e-736599874bfd",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup-signin-agreeterms-1",
+      "targets": [
+        ["id=popup-signin-agreeterms-1", "id"],
+        ["name=agreeterms", "name"],
+        ["css=#popup-signin-agreeterms-1", "css:finder"],
+        ["xpath=//input[@id='popup-signin-agreeterms-1']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div[6]/div/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6bfe546-6c28-4aae-a143-4cde3ffdd2d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=popup-signin-submit-create-account-form",
+      "targets": [
+        ["id=popup-signin-submit-create-account-form", "id"],
+        ["css=#popup-signin-submit-create-account-form", "css:finder"],
+        ["xpath=//button[@id='popup-signin-submit-create-account-form']", "xpath:attributes"],
+        ["xpath=//form[@id='popup-signin-create-account-form']/div[7]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create My Account')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "77082fb4-5b6b-449a-9a33-b4ae774bb8e8",
+    "name": "buy joel /offer",
+    "commands": [{
+      "id": "a03c93c7-3fd7-4188-9f64-ecc89ad251ee",
+      "comment": "",
+      "command": "open",
+      "target": "https://live.joelosteen.com/offer",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c826472-4b02-4cd9-b9d4-bdacaceaec7f",
+      "comment": "",
+      "command": "click",
+      "target": "id=gifts",
+      "targets": [
+        ["id=gifts", "id"],
+        ["name=gifts", "name"],
+        ["css=#gifts", "css:finder"],
+        ["xpath=//select[@id='gifts']", "xpath:attributes"],
+        ["xpath=//form[@id='aco-form']/div/div/div/div[2]/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "620d95eb-ce41-42af-b36c-8af33a749e9f",
+      "comment": "",
+      "command": "select",
+      "target": "id=gifts",
+      "targets": [],
+      "value": "label=BELIEVE"
+    }, {
+      "id": "b4bc2d5c-a7a8-4491-b2e2-186a00632086",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-row:nth-child(3) .form-check-label",
+      "targets": [
+        ["css=.form-row:nth-child(3) .form-check-label", "css:finder"],
+        ["xpath=//form[@id='aco-form']/div/div/div/div[3]/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Yes. I want to partner with you on a monthly basis as a Champion of Hope')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3264c279-0a1f-4e41-9677-f4e0e236cba3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-row:nth-child(3) .form-check-label",
+      "targets": [
+        ["css=.form-row:nth-child(3) .form-check-label", "css:finder"],
+        ["xpath=//form[@id='aco-form']/div/div/div/div[3]/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Yes. I want to partner with you on a monthly basis as a Champion of Hope')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f814e22-349b-460c-8ff3-0237cae2883f",
+      "comment": "",
+      "command": "click",
+      "target": "id=amount",
+      "targets": [
+        ["id=amount", "id"],
+        ["name=amount", "name"],
+        ["css=#amount", "css:finder"],
+        ["xpath=//select[@id='amount']", "xpath:attributes"],
+        ["xpath=//form[@id='aco-form']/div/div/div/div[2]/div/div/span/select", "xpath:idRelative"],
+        ["xpath=//span/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ffda227-9ac7-4832-8958-40c42c3bbe48",
+      "comment": "",
+      "command": "select",
+      "target": "id=amount",
+      "targets": [],
+      "value": "label=250"
+    }, {
+      "id": "ea802110-2b7a-4f2e-9d28-759a8641b0e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit-aco-form",
+      "targets": [
+        ["id=submit-aco-form", "id"],
+        ["css=#submit-aco-form", "css:finder"],
+        ["xpath=//button[@id='submit-aco-form']", "xpath:attributes"],
+        ["xpath=//form[@id='aco-form']/div/div/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "287f0290-d8be-42fa-8ae1-fa043d0f24bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkout-username",
+      "targets": [
+        ["id=checkout-username", "id"],
+        ["css=#checkout-username", "css:finder"],
+        ["xpath=//input[@id='checkout-username']", "xpath:attributes"],
+        ["xpath=//form[@id='checkout-username-form']/div/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/form[2]/div/div/div/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48b1f4db-d12b-4179-b624-fdf20efcc819",
+      "comment": "",
+      "command": "type",
+      "target": "id=checkout-username",
+      "targets": [
+        ["id=checkout-username", "id"],
+        ["css=#checkout-username", "css:finder"],
+        ["xpath=//input[@id='checkout-username']", "xpath:attributes"],
+        ["xpath=//form[@id='checkout-username-form']/div/div/div/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/form[2]/div/div/div/span/input", "xpath:position"]
+      ],
+      "value": "jeremyjr+tester@lakey.net"
+    }, {
+      "id": "5c8d5561-4246-46fc-86cf-b4645868ddd2",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkout-submit-username-form",
+      "targets": [
+        ["id=checkout-submit-username-form", "id"],
+        ["css=#checkout-submit-username-form", "css:finder"],
+        ["xpath=//button[@id='checkout-submit-username-form']", "xpath:attributes"],
+        ["xpath=//form[@id='checkout-username-form']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/form[2]/div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43af195f-5356-49b3-943c-9c05f5abe99b",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkout-password",
+      "targets": [
+        ["id=checkout-password", "id"],
+        ["css=#checkout-password", "css:finder"],
+        ["xpath=//input[@id='checkout-password']", "xpath:attributes"],
+        ["xpath=//form[@id='checkout-signin-form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/form[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11abf6f8-ccf1-4c2b-89c9-70e24d0dd37f",
+      "comment": "",
+      "command": "type",
+      "target": "id=checkout-password",
+      "targets": [
+        ["id=checkout-password", "id"],
+        ["css=#checkout-password", "css:finder"],
+        ["xpath=//input[@id='checkout-password']", "xpath:attributes"],
+        ["xpath=//form[@id='checkout-signin-form']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/form[3]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "TryThis#1"
+    }, {
+      "id": "7345647e-09ac-4c54-9397-d07639fcd781",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=checkout-submit-signin-form",
+      "targets": [
+        ["id=checkout-submit-signin-form", "id"],
+        ["css=#checkout-submit-signin-form", "css:finder"],
+        ["xpath=//button[@id='checkout-submit-signin-form']", "xpath:attributes"],
+        ["xpath=//form[@id='checkout-signin-form']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/form[3]/div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90fc5ef3-cf4a-484c-b1aa-99988e9aa464",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkout-submit-signin-form",
+      "targets": [
+        ["id=checkout-submit-signin-form", "id"],
+        ["css=#checkout-submit-signin-form", "css:finder"],
+        ["xpath=//button[@id='checkout-submit-signin-form']", "xpath:attributes"],
+        ["xpath=//form[@id='checkout-signin-form']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/form[3]/div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fee8824-f610-4ad1-a031-fbbe893f1e87",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkout-cardnumber",
+      "targets": [
+        ["id=checkout-cardnumber", "id"],
+        ["css=#checkout-cardnumber", "css:finder"],
+        ["xpath=//input[@id='checkout-cardnumber']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout-credit-card-form']/div/input", "xpath:idRelative"],
+        ["xpath=//form[11]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "220580b3-9439-47a4-9c34-4c982b6095f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=checkout-cardnumber",
+      "targets": [
+        ["id=checkout-cardnumber", "id"],
+        ["css=#checkout-cardnumber", "css:finder"],
+        ["xpath=//input[@id='checkout-cardnumber']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout-credit-card-form']/div/input", "xpath:idRelative"],
+        ["xpath=//form[11]/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "5454545454545454"
+    }, {
+      "id": "7aff795a-805d-4553-a43a-a3861ff72201",
+      "comment": "",
+      "command": "type",
+      "target": "id=checkout-cardexp",
+      "targets": [
+        ["id=checkout-cardexp", "id"],
+        ["css=#checkout-cardexp", "css:finder"],
+        ["xpath=//input[@id='checkout-cardexp']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout-credit-card-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form[11]/div/div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "45eff55e-f60e-4461-8ecd-69cfcc700411",
+      "comment": "",
+      "command": "type",
+      "target": "id=checkout-cardcvv",
+      "targets": [
+        ["id=checkout-cardcvv", "id"],
+        ["css=#checkout-cardcvv", "css:finder"],
+        ["xpath=//input[@id='checkout-cardcvv']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout-credit-card-form']/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "63266331-5b19-411c-99a2-557157ba4f04",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkout-submit-payment-detail-form",
+      "targets": [
+        ["id=checkout-submit-payment-detail-form", "id"],
+        ["css=#checkout-submit-payment-detail-form", "css:finder"],
+        ["xpath=//button[@id='checkout-submit-payment-detail-form']", "xpath:attributes"],
+        ["xpath=//form[@id='checkout-payment-detail-form']/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//form[11]/div[2]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45247b6e-1e7a-4df4-a552-df95fe8b2e31",
+      "comment": "",
+      "command": "click",
+      "target": "css=#checkout-submit-review-form > span",
+      "targets": [
+        ["css=#checkout-submit-review-form > span", "css:finder"],
+        ["xpath=//button[@id='checkout-submit-review-form']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Complete Donation')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3f47fa8f-8a5e-4574-b324-b59a8f0220ce",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.lakewoodchurch.com/", "https://live.lakewoodchurch.com/", "https://live.joelosteen.com/", "https://live.joelosteen.com/offer"],
+  "plugins": []
+}
